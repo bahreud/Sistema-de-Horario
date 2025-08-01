@@ -43,3 +43,4 @@ while True:
             else:
                 print("Nenhum horário registrado ainda.\n")
 
+print("banana")
