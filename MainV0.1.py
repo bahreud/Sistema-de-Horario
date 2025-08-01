@@ -35,8 +35,7 @@ while True:
             elif opcao == 1:
 
                 Segunda = int(input(""))
-
-
+                
             elif opcao == 2:
                 break
 
