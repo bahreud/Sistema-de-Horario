@@ -1,23 +1,71 @@
 from menu import menu
 # importa as funções do menu
+from typing import Dict, List #permite que qualquer valor (e vários valores diferentes) seja adicionado a um dicionário sem muito segredo
 
 class Login: # a classe que define as características para o login
+
+    # Dicionário com os dados dos professores (turma, disciplina, etc)
+    professores: Dict[int, Dict[str, any]] = {
+        2023006: {
+            "Professor": "Roberto Silva",
+            "Cod_Professor": 6,
+            "Disciplina": "Educação Física",
+            "Cod_Disciplina": 10,
+            "Turma": "3-B",
+            "Cod_Turma": 31
+        },
+        2023005: {
+            "Professor": "Patrícia Fernandes",
+            "Cod_Professor": 5,
+            "Disciplina": "Ciências",
+            "Cod_Disciplina": 9,
+            "Turma": "3-A",
+            "Cod_Turma": 30
+        },
+        2023004: {
+            "Professor": "Marcos Antônio",
+            "Cod_Professor": 4,
+            "Disciplina": "Geografia",
+            "Cod_Disciplina": 8,
+            "Turma": "2-B",
+            "Cod_Turma": 21
+        },
+        2023003: {
+            "Professor": "Ana Lúcia",
+            "Cod_Professor": 3,
+            "Disciplina": "História",
+            "Cod_Disciplina": 7,
+            "Turma": "2-A",
+            "Cod_Turma": 20
+        }
+    }
+
     def __init__(self, matricula, senha):
-        self.matricula = matricula
+        self.matricula = None #
         self.senha = senha
+        self.horario_final = None #
         self.dias_preferidos = []
         self.horarios_preferidos = []
         # o "self.dias_preferidos" e o "self.horarios_preferidos" vão guardar as escolhas que os usuários fizeram de dias e horarios que são melhores pra cada um
 
 
     def login(self):
-        if self.senha != 12345: # a senha, nesse caso eu defini como algo fixo, que o usuário não pode mudar, se o usuário não digitar "12345" da "return False", ou seja, erro e o "código recomeça"
-            print("Senha incorreta! Tente novamente.")
-            return False
+        print("\n---- SISTEMA DE GERENCIAMENTO DE HORÁRIOS ----")
+        print("Por favor, faça login\n")
 
-        matriculas_aceitas = [8427, 4827, 5634, 9872] # basicamente a mesma coisa com as matrículas, já temos matrículas registradas e se algum usuário digita uma que "não existe" nesse sistema da "return False" e o "código recomeça"
-        if self.matricula not in matriculas_aceitas:
-            print("Essa matrícula não é válida! Tente novamente.")
-            return False
+        while True:
+            matricula = int(input("Matricula: "))
+            senha = input("Senha: ")
+            # O usuário digita sua matrícula (que só pode ser números inteiros) e a senha
 
-        return True # caso a senha e a matrícula sejam válidas o usuário vai pro menu de opções, o "return True" é para dizer que essas informações são válidas e que o usuário pode prosseguir
+            if senha != "12345":
+                print("Senha incorreta! Tente novamente.")
+                return False # se a senha não for digitada corretamente o retorno será dado como "falso" ou seja o login dará errado
+
+            if matricula not in self.professores:
+                print("Essa matrícula é invalida! Tente novamente.")
+                return False # se a matrícula não estiver registrada o login dará errado
+
+            self.matricula = matricula
+            print(f"\nOlá, {self.professores[matricula]['Professor']}!")
+            return True # se a matrícula estiver dentro do "registro de matriculas o login dará certo e o usuário será direcionado para o menu de opções
