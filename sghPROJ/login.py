@@ -18,7 +18,7 @@ class Login: # a classe que define as características para o login
             "Cod_Professor": 5,
             "Disciplina": "Ciências",
             "Cod_Disciplina": 9,
-            "Turma": "3-A",
+            "Turma": "3-A", 
             "Cod_Turma": 30
         },
         2023004: {
