@@ -1,0 +1,89 @@
+Curso;Codigo_Curso;Turma;Codigo_Turma;Disciplina;Codigo_Disciplina;Professor;Matricula_Professor;Dia;Horario
+Administração;03;1º Ano;301;Português;3008;Luzia;300;Segunda;07:10-08:00
+Administração;03;1º Ano;301;Administração Geral;3003;Jairo;308;Segunda;10:50-11:40
+Administração;03;1º Ano;301;Filosofia;3012;Luzia;300;Segunda;11:40-12:30
+Administração;03;1º Ano;301;Português;3008;Beloni;311;Segunda;13:50-14:40
+Administração;03;1º Ano;301;Gestão de Pessoas;3001;Felipe;305;Terça;07:10-08:00
+Administração;03;1º Ano;301;Administração Geral;3003;Rodrigo Alves;315;Terça;08:00-08:50
+Administração;03;1º Ano;301;Português;3008;Renata Bilego;304;Terça;09:00-09:50
+Administração;03;1º Ano;301;Direito Empresarial;3004;Patricia Dias;301;Terça;10:50-11:40
+Administração;03;1º Ano;301;Matemática Financeira;3007;Sebastiao;312;Terça;11:40-12:30
+Administração;03;1º Ano;301;Educação Física;3011;Renata Bilego;304;Terça;15:50-16:40
+Administração;03;1º Ano;301;Gestão de Produção;3006;Marina Souza;316;Terça;16:40-17:30
+Administração;03;1º Ano;301;Contabilidade;3000;Jairo;308;Quarta;08:00-08:50
+Administração;03;1º Ano;301;Arte;3015;Jairo;308;Quarta;10:50-11:40
+Administração;03;1º Ano;301;Matemática Financeira;3007;Rodrigo Alves;315;Quarta;11:40-12:30
+Administração;03;1º Ano;301;Português;3008;Michelle;307;Quarta;13:50-14:40
+Administração;03;1º Ano;301;Administração Geral;3003;Renata Bilego;304;Quarta;14:40-15:30
+Administração;03;1º Ano;301;Direito Empresarial;3004;Rodrigo Alves;315;Quinta;09:00-09:50
+Administração;03;1º Ano;301;Contabilidade;3000;Michelle;307;Quinta;10:50-11:40
+Administração;03;1º Ano;301;Português;3008;Michelle;307;Quinta;11:40-12:30
+Administração;03;1º Ano;301;Administração Geral;3003;Elizeu;303;Quinta;13:50-14:40
+Administração;03;1º Ano;301;Português;3008;Felipe;305;Quinta;15:50-16:40
+Administração;03;1º Ano;301;Português;3008;Elizeu;303;Quinta;16:40-17:30
+Administração;03;1º Ano;301;Geografia;3014;Deise Palaver;306;Sexta;08:00-08:50
+Administração;03;1º Ano;301;Educação Física;3011;Elizeu;303;Sexta;10:50-11:40
+Administração;03;1º Ano;301;Economia e Mercados;3002;Felipe;305;Sexta;16:40-17:30
+Administração;03;2º Ano;302;História;3009;Rodrigo Alves;315;Segunda;07:10-08:00
+Administração;03;2º Ano;302;Direito Empresarial;3004;Hippler;310;Segunda;10:50-11:40
+Administração;03;2º Ano;302;Educação Física;3011;Carla Mendes;314;Segunda;13:50-14:40
+Administração;03;2º Ano;302;Administração Geral;3003;Elizeu;303;Segunda;14:40-15:30
+Administração;03;2º Ano;302;Gestão de Produção;3006;Luzia;300;Segunda;15:50-16:40
+Administração;03;2º Ano;302;Contabilidade;3000;José Ivo;302;Segunda;16:40-17:30
+Administração;03;2º Ano;302;Direito Empresarial;3004;Michelle;307;Terça;09:50-10:40
+Administração;03;2º Ano;302;História;3009;Renata Bilego;304;Terça;11:40-12:30
+Administração;03;2º Ano;302;Economia e Mercados;3002;Renata Bilego;304;Terça;13:50-14:40
+Administração;03;2º Ano;302;Contabilidade;3000;Elizeu;303;Terça;14:40-15:30
+Administração;03;2º Ano;302;Contabilidade;3000;Marina Souza;316;Terça;16:40-17:30
+Administração;03;2º Ano;302;História;3009;Luzia;300;Quarta;07:10-08:00
+Administração;03;2º Ano;302;Administração Geral;3003;Jairo;308;Quarta;08:00-08:50
+Administração;03;2º Ano;302;Arte;3015;Rodrigo Alves;315;Quarta;09:50-10:40
+Administração;03;2º Ano;302;Educação Física;3011;Renata Bilego;304;Quarta;10:50-11:40
+Administração;03;2º Ano;302;Economia e Mercados;3002;Hippler;310;Quarta;14:40-15:30
+Administração;03;2º Ano;302;Administração Geral;3003;Carla Mendes;314;Quarta;16:40-17:30
+Administração;03;2º Ano;302;Marketing;3005;Carla Mendes;314;Quinta;07:10-08:00
+Administração;03;2º Ano;302;Educação Física;3011;Patricia Dias;301;Quinta;10:50-11:40
+Administração;03;2º Ano;302;Economia e Mercados;3002;Elizeu;303;Quinta;11:40-12:30
+Administração;03;2º Ano;302;Economia e Mercados;3002;Luzia;300;Quinta;14:40-15:30
+Administração;03;2º Ano;302;Arte;3015;Deise Palaver;306;Quinta;15:50-16:40
+Administração;03;2º Ano;302;Economia e Mercados;3002;Hippler;310;Sexta;07:10-08:00
+Administração;03;2º Ano;302;Sociologia;3013;Luzia;300;Sexta;08:00-08:50
+Administração;03;2º Ano;302;Gestão de Produção;3006;Michelle;307;Sexta;11:40-12:30
+Administração;03;2º Ano;302;Marketing;3005;Elizeu;303;Sexta;13:50-14:40
+Administração;03;2º Ano;302;Gestão de Pessoas;3001;Luzia;300;Sexta;14:40-15:30
+Administração;03;2º Ano;302;Marketing;3005;Marina Souza;316;Sexta;15:50-16:40
+Administração;03;3º Ano;303;Arte;3015;José Ivo;302;Segunda;07:10-08:00
+Administração;03;3º Ano;303;Direito Empresarial;3004;Hippler;310;Segunda;10:50-11:40
+Administração;03;3º Ano;303;Sociologia;3013;Hippler;310;Segunda;11:40-12:30
+Administração;03;3º Ano;303;Administração Geral;3003;Renata Bilego;304;Segunda;13:50-14:40
+Administração;03;3º Ano;303;Educação Física;3011;Michelle;307;Segunda;14:40-15:30
+Administração;03;3º Ano;303;Gestão de Produção;3006;Jairo;308;Segunda;16:40-17:30
+Administração;03;3º Ano;303;Economia e Mercados;3002;Keila;309;Terça;07:10-08:00
+Administração;03;3º Ano;303;Marketing;3005;Felipe;305;Terça;08:00-08:50
+Administração;03;3º Ano;303;Português;3008;Luzia;300;Terça;09:00-09:50
+Administração;03;3º Ano;303;Sociologia;3013;Keila;309;Terça;09:50-10:40
+Administração;03;3º Ano;303;Educação Física;3011;Michelle;307;Terça;10:50-11:40
+Administração;03;3º Ano;303;Filosofia;3012;Elizeu;303;Terça;13:50-14:40
+Administração;03;3º Ano;303;Marketing;3005;Beloni;311;Terça;14:40-15:30
+Administração;03;3º Ano;303;Matemática Financeira;3007;Sebastiao;312;Quarta;07:10-08:00
+Administração;03;3º Ano;303;Sociologia;3013;Beloni;311;Quarta;08:00-08:50
+Administração;03;3º Ano;303;Educação Física;3011;Keila;309;Quarta;09:00-09:50
+Administração;03;3º Ano;303;Economia e Mercados;3002;Hippler;310;Quarta;09:50-10:40
+Administração;03;3º Ano;303;Arte;3015;Felipe;305;Quarta;10:50-11:40
+Administração;03;3º Ano;303;Administração Geral;3003;Deise Palaver;306;Quarta;11:40-12:30
+Administração;03;3º Ano;303;Matemática;3010;Sebastiao;312;Quarta;13:50-14:40
+Administração;03;3º Ano;303;História;3009;Rodrigo Alves;315;Quarta;14:40-15:30
+Administração;03;3º Ano;303;Educação Física;3011;Sebastiao;312;Quarta;16:40-17:30
+Administração;03;3º Ano;303;Gestão de Produção;3006;Marina Souza;316;Quinta;09:50-10:40
+Administração;03;3º Ano;303;Matemática;3010;Carla Mendes;314;Quinta;10:50-11:40
+Administração;03;3º Ano;303;Economia e Mercados;3002;Rodrigo Alves;315;Quinta;11:40-12:30
+Administração;03;3º Ano;303;Filosofia;3012;Patricia Dias;301;Quinta;13:50-14:40
+Administração;03;3º Ano;303;Filosofia;3012;Rodrigo Alves;315;Quinta;14:40-15:30
+Administração;03;3º Ano;303;Matemática Financeira;3007;Beloni;311;Sexta;07:10-08:00
+Administração;03;3º Ano;303;Educação Física;3011;Luzia;300;Sexta;08:00-08:50
+Administração;03;3º Ano;303;Gestão de Pessoas;3001;Michelle;307;Sexta;09:00-09:50
+Administração;03;3º Ano;303;Marketing;3005;Renata Bilego;304;Sexta;09:50-10:40
+Administração;03;3º Ano;303;Economia e Mercados;3002;Hippler;310;Sexta;10:50-11:40
+Administração;03;3º Ano;303;Geografia;3014;José Ivo;302;Sexta;13:50-14:40
+Administração;03;3º Ano;303;Matemática;3010;Beloni;311;Sexta;14:40-15:30
+Administração;03;3º Ano;303;História;3009;Marina Souza;316;Sexta;15:50-16:40

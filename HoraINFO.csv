@@ -1,0 +1,94 @@
+Curso;Codigo_Curso;Turma;Codigo_Turma;Disciplina;Codigo_Disciplina;Professor;Matricula_Professor;Dia;Horario
+Informática;02;1º Ano;201;Desenvolvimento para Web;2004;Lirian;214;Segunda;07:10-08:00
+Informática;02;1º Ano;201;Educação Física;2010;André Lobo;203;Segunda;08:00-08:50
+Informática;02;1º Ano;201;Arte;2015;Fernando;206;Segunda;09:00-09:50
+Informática;02;1º Ano;201;Projeto Integrador;2005;André Lobo;203;Segunda;09:50-10:40
+Informática;02;1º Ano;201;Banco de Dados;2003;Maiza Helena;209;Segunda;11:40-12:30
+Informática;02;1º Ano;201;Projeto Integrador;2005;Jacinto;201;Segunda;13:50-14:40
+Informática;02;1º Ano;201;Projeto Integrador;2005;João Victor;215;Segunda;15:50-16:40
+Informática;02;1º Ano;201;Projeto Integrador;2005;João Victor;215;Terça;07:10-08:00
+Informática;02;1º Ano;201;História;2007;Maiza Helena;209;Terça;08:00-08:50
+Informática;02;1º Ano;201;Desenvolvimento para Web;2004;Kelly;208;Terça;09:00-09:50
+Informática;02;1º Ano;201;Física;2011;Antonio;202;Terça;09:50-10:40
+Informática;02;1º Ano;201;Arte;2015;Antonio;202;Terça;10:50-11:40
+Informática;02;1º Ano;201;Introdução à Programação;2000;Thiago Miguel;205;Terça;13:50-14:40
+Informática;02;1º Ano;201;Arte;2015;Lucimar;207;Quarta;07:10-08:00
+Informática;02;1º Ano;201;Geografia;2014;Lirian;214;Quarta;08:00-08:50
+Informática;02;1º Ano;201;Engenharia de Software;2001;Abade;204;Quarta;09:00-09:50
+Informática;02;1º Ano;201;Introdução à Programação;2000;Juliano;211;Quarta;10:50-11:40
+Informática;02;1º Ano;201;Redes de Computadores;2006;Edson;210;Quarta;14:40-15:30
+Informática;02;1º Ano;201;Matemática;2009;Abade;204;Quarta;15:50-16:40
+Informática;02;1º Ano;201;Geografia;2014;Fernando;206;Quarta;16:40-17:30
+Informática;02;1º Ano;201;História;2007;Gleiner;200;Quinta;08:00-08:50
+Informática;02;1º Ano;201;Introdução à Programação;2000;Kelly;208;Quinta;10:50-11:40
+Informática;02;1º Ano;201;Desenvolvimento para Web;2004;André Lobo;203;Quinta;11:40-12:30
+Informática;02;1º Ano;201;Arte;2015;Jacinto;201;Sexta;09:00-09:50
+Informática;02;1º Ano;201;Banco de Dados;2003;Antonio;202;Sexta;13:50-14:40
+Informática;02;1º Ano;201;Projeto Integrador;2005;Edson;210;Sexta;14:40-15:30
+Informática;02;1º Ano;201;Educação Física;2010;Kelly;208;Sexta;15:50-16:40
+Informática;02;1º Ano;201;Introdução à Programação;2000;Thiago Miguel;205;Sexta;16:40-17:30
+Informática;02;2º Ano;202;Biologia;2013;Gleiner;200;Segunda;07:10-08:00
+Informática;02;2º Ano;202;Física;2011;Maiza Helena;209;Segunda;09:50-10:40
+Informática;02;2º Ano;202;Redes de Computadores;2006;Sebastiao;212;Segunda;10:50-11:40
+Informática;02;2º Ano;202;Geografia;2014;Lucimar;207;Segunda;11:40-12:30
+Informática;02;2º Ano;202;Desenvolvimento para Web;2004;Lirian;214;Segunda;13:50-14:40
+Informática;02;2º Ano;202;Geografia;2014;João Victor;215;Terça;07:10-08:00
+Informática;02;2º Ano;202;Arte;2015;Lucimar;207;Terça;08:00-08:50
+Informática;02;2º Ano;202;História;2007;Jeferson;213;Terça;09:00-09:50
+Informática;02;2º Ano;202;Física;2011;Fernando;206;Terça;09:50-10:40
+Informática;02;2º Ano;202;Português;2008;André Lobo;203;Terça;10:50-11:40
+Informática;02;2º Ano;202;Engenharia de Software;2001;João Victor;215;Terça;11:40-12:30
+Informática;02;2º Ano;202;Matemática;2009;Lucimar;207;Terça;13:50-14:40
+Informática;02;2º Ano;202;Química;2012;Jacinto;201;Terça;14:40-15:30
+Informática;02;2º Ano;202;Banco de Dados;2003;Edson;210;Terça;15:50-16:40
+Informática;02;2º Ano;202;Arquitetura de Sistemas;2002;Abade;204;Quarta;07:10-08:00
+Informática;02;2º Ano;202;Redes de Computadores;2006;Maiza Helena;209;Quarta;08:00-08:50
+Informática;02;2º Ano;202;Introdução à Programação;2000;Jeferson;213;Quarta;09:00-09:50
+Informática;02;2º Ano;202;Geografia;2014;Gleiner;200;Quarta;10:50-11:40
+Informática;02;2º Ano;202;Matemática;2009;Thiago Miguel;205;Quarta;13:50-14:40
+Informática;02;2º Ano;202;Arte;2015;Maiza Helena;209;Quarta;15:50-16:40
+Informática;02;2º Ano;202;Introdução à Programação;2000;Kelly;208;Quinta;08:00-08:50
+Informática;02;2º Ano;202;Projeto Integrador;2005;André Lobo;203;Quinta;09:00-09:50
+Informática;02;2º Ano;202;Química;2012;Jacinto;201;Quinta;10:50-11:40
+Informática;02;2º Ano;202;Educação Física;2010;Lucimar;207;Quinta;11:40-12:30
+Informática;02;2º Ano;202;Desenvolvimento para Web;2004;Edson;210;Quinta;14:40-15:30
+Informática;02;2º Ano;202;Educação Física;2010;Antonio;202;Quinta;16:40-17:30
+Informática;02;2º Ano;202;Geografia;2014;Antonio;202;Sexta;07:10-08:00
+Informática;02;2º Ano;202;Português;2008;Gleiner;200;Sexta;09:00-09:50
+Informática;02;2º Ano;202;História;2007;Sebastiao;212;Sexta;09:50-10:40
+Informática;02;2º Ano;202;Educação Física;2010;Lirian;214;Sexta;10:50-11:40
+Informática;02;2º Ano;202;Arte;2015;Kelly;208;Sexta;11:40-12:30
+Informática;02;2º Ano;202;Desenvolvimento para Web;2004;Juliano;211;Sexta;13:50-14:40
+Informática;02;2º Ano;202;Física;2011;Jacinto;201;Sexta;15:50-16:40
+Informática;02;2º Ano;202;Introdução à Programação;2000;Jacinto;201;Sexta;16:40-17:30
+Informática;02;3º Ano;203;Geografia;2014;Juliano;211;Segunda;07:10-08:00
+Informática;02;3º Ano;203;Banco de Dados;2003;Abade;204;Segunda;08:00-08:50
+Informática;02;3º Ano;203;Introdução à Programação;2000;Jacinto;201;Segunda;09:50-10:40
+Informática;02;3º Ano;203;Desenvolvimento para Web;2004;Thiago Miguel;205;Segunda;10:50-11:40
+Informática;02;3º Ano;203;Educação Física;2010;Edson;210;Segunda;11:40-12:30
+Informática;02;3º Ano;203;Banco de Dados;2003;Jeferson;213;Segunda;14:40-15:30
+Informática;02;3º Ano;203;Matemática;2009;Edson;210;Terça;08:00-08:50
+Informática;02;3º Ano;203;Arte;2015;Thiago Miguel;205;Terça;09:00-09:50
+Informática;02;3º Ano;203;Banco de Dados;2003;Sebastiao;212;Terça;10:50-11:40
+Informática;02;3º Ano;203;Arquitetura de Sistemas;2002;André Lobo;203;Terça;11:40-12:30
+Informática;02;3º Ano;203;Educação Física;2010;Edson;210;Terça;14:40-15:30
+Informática;02;3º Ano;203;Educação Física;2010;Thiago Miguel;205;Terça;15:50-16:40
+Informática;02;3º Ano;203;Português;2008;Thiago Miguel;205;Quarta;07:10-08:00
+Informática;02;3º Ano;203;Projeto Integrador;2005;Gleiner;200;Quarta;09:00-09:50
+Informática;02;3º Ano;203;Educação Física;2010;Fernando;206;Quarta;13:50-14:40
+Informática;02;3º Ano;203;Educação Física;2010;Abade;204;Quarta;15:50-16:40
+Informática;02;3º Ano;203;Português;2008;Abade;204;Quarta;16:40-17:30
+Informática;02;3º Ano;203;Engenharia de Software;2001;Jacinto;201;Quinta;08:00-08:50
+Informática;02;3º Ano;203;História;2007;Edson;210;Quinta;10:50-11:40
+Informática;02;3º Ano;203;História;2007;Antonio;202;Quinta;11:40-12:30
+Informática;02;3º Ano;203;Redes de Computadores;2006;Lirian;214;Quinta;16:40-17:30
+Informática;02;3º Ano;203;Engenharia de Software;2001;Thiago Miguel;205;Sexta;07:10-08:00
+Informática;02;3º Ano;203;Educação Física;2010;João Victor;215;Sexta;08:00-08:50
+Informática;02;3º Ano;203;Geografia;2014;Jeferson;213;Sexta;09:00-09:50
+Informática;02;3º Ano;203;Arquitetura de Sistemas;2002;Abade;204;Sexta;09:50-10:40
+Informática;02;3º Ano;203;Engenharia de Software;2001;André Lobo;203;Sexta;10:50-11:40
+Informática;02;3º Ano;203;Física;2011;Maiza Helena;209;Sexta;11:40-12:30
+Informática;02;3º Ano;203;Introdução à Programação;2000;André Lobo;203;Sexta;13:50-14:40
+Informática;02;3º Ano;203;Português;2008;Maiza Helena;209;Sexta;14:40-15:30
+Informática;02;3º Ano;203;Geografia;2014;Antonio;202;Sexta;15:50-16:40
+Informática;02;3º Ano;203;Banco de Dados;2003;Abade;204;Sexta;16:40-17:30
