@@ -1,5 +1,11 @@
 import pandas as pd
 
+# exibe a matriz completa no terminal
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', None)
+pd.set_option('display.max_colwidth', None)
+
 HoraINFO = pd.read_csv('HoraINFO.csv',
                          sep=';',
                          encoding='utf-8',
