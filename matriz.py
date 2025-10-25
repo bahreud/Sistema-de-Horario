@@ -1,20 +1,11 @@
 import numpy as np
 import random
-from csvpandas import horarioINFO as info, horarioADM as adm, horarioAGRO as agro
+import pandas as pd
+from csvpandas import horarioAGRO as agro, horarioINFO as info, horarioADM as adm
 
-def padronizar_colunas(df):
-    return df.rename(columns={
-        "Discipline_Code": "Código da Disciplina",
-        "Total_Semanal": "Total de Aulas Semanais"
-    })
-
-info = padronizar_colunas(info)
-adm = padronizar_colunas(adm)
-agro = padronizar_colunas(agro)
-
-professores_info = dict(zip(info["Código da Disciplina"], info["Professor"]))
-professores_adm = dict(zip(adm["Código da Disciplina"], adm["Professor"]))
-professores_agro = dict(zip(agro["Código da Disciplina"], agro["Professor"]))
+professores_adm = 'professores'
+professores_info = 'professores'
+professores_agro = 'professores'
 
 dias = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"]
 horarios = [
@@ -23,52 +14,49 @@ horarios = [
     "14:40-15:30", "15:50-16:40", "16:40-17:30"
 ]
 
+
 def distribuir_disciplinas(df):
+    """Distribui as disciplinas aleatoriamente na matriz."""
     matriz = np.zeros((len(dias), len(horarios)), dtype=int)
     for _, row in df.iterrows():
         codigo = int(row["Código da Disciplina"])
         aulas = int(row["Total de Aulas Semanais"])
 
         livres = [(i, j) for i in range(len(dias)) for j in range(len(horarios)) if matriz[i, j] == 0]
-        if len(livres) == 0:
+        if not livres:
             break
-        if len(livres) < aulas:
-            aulas = len(livres)
-
-        escolhidos = random.sample(livres, aulas)
+        escolhidos = random.sample(livres, min(aulas, len(livres)))
 
         for (i, j) in escolhidos:
             matriz[i, j] = codigo
     return matriz
 
-def mostrar_matriz(nome_curso, serie, turma, matriz, professores):
-    print(f"\n MATRIZ DO CURSO: {nome_curso} | {serie} | Turma {turma}")
-    print(f"{'Dia/Horário':<12}", end="")
-    for h in horarios:
-        print(f"{h:<15}", end="")
-    print()
-    for i, dia in enumerate(dias):
-        print(f"{dia:<12}", end="")
-        for j in range(len(horarios)):
-            valor = matriz[i, j]
-            if valor == 0:
-                print(f"{'-':<15}", end="")
-            else:
-                nome_prof = professores.get(valor, "?")
-                texto = f"{valor}-{nome_prof[:8]}"
-                print(f"{texto:<15}", end="")
-        print()
 
 def gerar_matrizes_por_turma(df, nome_curso, professores):
+    """Cria uma matriz para cada turma e série do curso."""
     if "Série" not in df.columns or "Turma" not in df.columns:
         print(f"O DataFrame de {nome_curso} não tem colunas 'Série' e 'Turma'.")
-        return
+        return []
 
+    resultados = []
     grupos = df.groupby(["Série", "Turma"])
     for (serie, turma), grupo in grupos:
         matriz = distribuir_disciplinas(grupo)
-        mostrar_matriz(nome_curso, serie, turma, matriz, professores)
+        resultados.append((nome_curso, serie, turma, matriz, professores, grupo))
+    return resultados
 
-gerar_matrizes_por_turma(info, "Informática", professores_info)
-gerar_matrizes_por_turma(adm, "Administração", professores_adm)
-gerar_matrizes_por_turma(agro, "Agropecuária", professores_agro)
+# ------------------------
+# MAIN — Gera matrizes e exporta todas em um único CSV
+# ------------------------
+if __name__ == "__main__":
+    todas = []
+    todas += gerar_matrizes_por_turma(info, "Informática", professores_info)
+    todas += gerar_matrizes_por_turma(adm, "Administração", professores_adm)
+    todas += gerar_matrizes_por_turma(agro, "Agropecuária", professores_agro)
+
+    # Cria DataFrame final e salva em CSV
+    df_final = pd.DataFrame(todas)
+    df_final.to_csv("matrizes_geradas.csv", index=False, encoding="utf-8-sig", sep=";")
+
+    print(f"\n Total de matrizes geradas: {len(todas)}")
+    print("Arquivo salvo como: matrizes_geradas.csv")
