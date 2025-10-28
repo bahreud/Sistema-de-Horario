@@ -1,0 +1,179 @@
+cod curso,curso,codigo turma,turma,cod disciplina,disciplina,cod professor,professor,total_aulas
+cur001,agro,tur001,1° ano - a,dis001,mecanizacao agricola,pro001,leandro caetano,3
+cur001,agro,tur001,1° ano - a,dis002,nutricao animal e piscicultura,pro002,flavia,3
+cur001,agro,tur001,1° ano - a,dis003,olericultura,pro003,fernanda,3
+cur001,agro,tur001,1° ano - a,dis004,praticas agropecuarias,pro001,leandro caetano,4
+cur001,agro,tur001,1° ano - a,dis005,"manejo e conservacao do solo e agua, adubacao do solo",pro003,fernanda,3
+cur001,agro,tur001,1° ano - a,dis006,geografia,pro004,hippler,2
+cur001,agro,tur001,1° ano - a,dis007,matematica i,pro005,eliete,4
+cur001,agro,tur001,1° ano - a,dis008,historia,pro006,keila,2
+cur001,agro,tur001,1° ano - a,dis009,biologia,pro007,tassiana,2
+cur001,agro,tur001,1° ano - a,dis010,educacao fisica,pro008,nairana,2
+cur001,agro,tur001,1° ano - a,dis011,lingua portuguesa e literatura,pro009,juliano,4
+cur001,agro,tur001,1° ano - a,dis012,arte,pro010,sebastiao,1
+cur001,agro,tur001,1° ano - a,dis013,fisica,pro011,tiago,2
+cur001,agro,tur002,1° ano - b,dis008,historia,pro006,keila,2
+cur001,agro,tur002,1° ano - b,dis012,arte,pro010,sebastiao,1
+cur001,agro,tur002,1° ano - b,dis004,praticas agropecuarias,pro001,leandro caetano,4
+cur001,agro,tur002,1° ano - b,dis002,nutricao animal e piscicultura,pro002,flavia,3
+cur001,agro,tur002,1° ano - b,dis009,biologia,pro007,tassiana,2
+cur001,agro,tur002,1° ano - b,dis007,matematica i,pro005,eliete,4
+cur001,agro,tur002,1° ano - b,dis003,olericultura,pro003,fernanda,3
+cur001,agro,tur002,1° ano - b,dis011,lingua portuguesa e literatura,pro009,juliano,4
+cur001,agro,tur002,1° ano - b,dis006,geografia,pro004,hippler,2
+cur001,agro,tur002,1° ano - b,dis010,educacao fisica,pro008,nairana,2
+cur001,agro,tur002,1° ano - b,dis001,mecanizacao agricola,pro001,leandro caetano,3
+cur001,agro,tur002,1° ano - b,dis013,fisica,pro011,tiago,2
+cur001,agro,tur003,2° ano - a,dis014,biologia ii,pro007,tassiana,2
+cur001,agro,tur003,2° ano - a,dis015,lingua estrangeira espanhol ii,pro012,elisangela,2
+cur001,agro,tur003,2° ano - a,dis016,lingua portuguesa e literatura ii,pro012,elisangela,4
+cur001,agro,tur003,2° ano - a,dis017,lingua estrangeira ingles ii,pro013,kelly,2
+cur001,agro,tur003,2° ano - a,dis018,educacao fisica ii,pro008,nairana,2
+cur001,agro,tur003,2° ano - a,dis019,fisica ii,pro014,fernando,2
+cur001,agro,tur003,2° ano - a,dis020,geoprocessamento i,pro015,marco morais,3
+cur001,agro,tur003,2° ano - a,dis021,zootecnia ii avicultura e suinocultura,pro016,leandro miranda,3
+cur001,agro,tur003,2° ano - a,dis022,quimica ii,pro017,daisy binde,2
+cur001,agro,tur003,2° ano - a,dis023,eletiva i informatica basica,pro018,jacinto,2
+cur001,agro,tur003,2° ano - a,dis024,matematica ii,pro005,eliete,4
+cur001,agro,tur003,2° ano - a,dis001,mecanizacao agricola,pro019,fabricio,3
+cur001,agro,tur003,2° ano - a,dis025,filosofia ii,pro020,joao victor,2
+cur001,agro,tur003,2° ano - a,dis026,geografia ii,pro021,angelo,2
+cur001,agro,tur004,2° ano - b,dis027,agricultura ii culturas perenes,pro003,fernanda,3
+cur001,agro,tur004,2° ano - b,dis028,arte ii,pro010,sebastiao,1
+cur001,agro,tur004,2° ano - b,dis019,fisica ii,pro014,fernando,2
+cur001,agro,tur004,2° ano - b,dis026,geografia ii,pro021,angelo,2
+cur001,agro,tur004,2° ano - b,dis014,biologia ii,pro007,tassiana,2
+cur001,agro,tur004,2° ano - b,dis022,quimica ii,pro017,daisy binde,2
+cur001,agro,tur004,2° ano - b,dis021,zootecnia ii avicultura e suinocultura,pro016,leandro miranda,3
+cur001,agro,tur004,2° ano - b,dis023,eletiva i informatica basica,pro018,jacinto,2
+cur001,agro,tur004,2° ano - b,dis025,filosofia ii,pro020,joao victor,2
+cur001,agro,tur004,2° ano - b,dis015,lingua estrangeira espanhol ii,pro012,elisangela,2
+cur001,agro,tur004,2° ano - b,dis016,lingua portuguesa e literatura ii,pro012,elisangela,4
+cur001,agro,tur004,2° ano - b,dis001,mecanizacao agricola,pro019,fabricio,3
+cur001,agro,tur005,3° ano - a,dis029,"extensao, gestao e economia rural",pro022,elder,3
+cur001,agro,tur005,3° ano - a,dis030,processamento de alimentos,pro002,flavia,3
+cur001,agro,tur005,3° ano - a,dis031,fisica iii,pro014,fernando,2
+cur001,agro,tur005,3° ano - a,dis032,agricultura iii culturas anuais,pro019,fabricio,3
+cur001,agro,tur005,3° ano - a,dis033,historia iii,pro006,keila,2
+cur001,agro,tur005,3° ano - a,dis034,sociologia iii,pro023,joao binde,2
+cur001,agro,tur005,3° ano - a,dis035,lingua estrangeira espanhol iii,pro012,elisangela,2
+cur001,agro,tur005,3° ano - a,dis036,lingua portuguesa e literatura iii,pro024,edson,4
+cur001,agro,tur005,3° ano - a,dis037,zootecnia iii ruminantes e pastagens,pro016,leandro miranda,3
+cur001,agro,tur005,3° ano - a,dis038,irrigacao e drenagem,pro003,fernanda,3
+cur001,agro,tur005,3° ano - a,dis039,quimica iii,pro017,daisy binde,2
+cur001,agro,tur005,3° ano - a,dis040,arte iii,pro010,sebastiao,1
+cur001,agro,tur005,3° ano - a,dis041,matematica iii,pro025,manoel,4
+cur001,agro,tur006,3° ano - b,dis029,"extensao, gestao e economia rural",pro022,elder,3
+cur001,agro,tur006,3° ano - b,dis034,sociologia iii,pro023,joao binde,2
+cur001,agro,tur006,3° ano - b,dis042,biologia iii,pro007,tassiana,2
+cur001,agro,tur006,3° ano - b,dis032,agricultura iii culturas anuais,pro019,fabricio,3
+cur001,agro,tur006,3° ano - b,dis035,lingua estrangeira espanhol iii,pro012,elisangela,2
+cur001,agro,tur006,3° ano - b,dis037,zootecnia iii ruminantes e pastagens,pro001,leandro caetano,3
+cur001,agro,tur006,3° ano - b,dis038,irrigacao e drenagem,pro003,fernanda,3
+cur001,agro,tur006,3° ano - b,dis040,arte iii,pro010,sebastiao,1
+cur001,agro,tur006,3° ano - b,dis030,processamento de alimentos,pro002,flavia,3
+cur001,agro,tur006,3° ano - b,dis031,fisica iii,pro014,fernando,2
+cur002,adm,tur007,1° ano - a,dis043,contabilidade basica,pro026,luzia,3
+cur002,adm,tur007,1° ano - a,dis006,geografia,pro004,hippler,2
+cur002,adm,tur007,1° ano - a,dis044,gestao de pessoas,pro027,patricia dias,3
+cur002,adm,tur007,1° ano - a,dis008,historia,pro006,keila,2
+cur002,adm,tur007,1° ano - a,dis045,teoria geral da administracao,pro028,jose ivo,4
+cur002,adm,tur007,1° ano - a,dis010,educacao fisica,pro008,nairana,2
+cur002,adm,tur007,1° ano - a,dis009,biologia,pro029,thiago miguel,2
+cur002,adm,tur007,1° ano - a,dis013,fisica,pro011,tiago,2
+cur002,adm,tur007,1° ano - a,dis007,matematica i,pro030,lucimar,4
+cur002,adm,tur007,1° ano - a,dis011,lingua portuguesa e literatura,pro031,michelle,4
+cur002,adm,tur007,1° ano - a,dis046,informatica aplicada,pro018,jacinto,2
+cur002,adm,tur008,1° ano - b,dis043,contabilidade basica,pro026,luzia,3
+cur002,adm,tur008,1° ano - b,dis047,libras,pro031,michelle,2
+cur002,adm,tur008,1° ano - b,dis048,economia e mercados,pro032,elizeu,3
+cur002,adm,tur008,1° ano - b,dis007,matematica i,pro030,lucimar,4
+cur002,adm,tur008,1° ano - b,dis012,arte,pro010,sebastiao,1
+cur002,adm,tur008,1° ano - b,dis011,lingua portuguesa e literatura,pro031,michelle,4
+cur002,adm,tur009,2° ano - a,dis049,historia ii,pro006,keila,2
+cur002,adm,tur009,2° ano - a,dis024,matematica ii,pro033,jairo,4
+cur002,adm,tur009,2° ano - a,dis017,lingua estrangeira ingles ii,pro013,kelly,2
+cur002,adm,tur009,2° ano - a,dis025,filosofia ii,pro020,joao victor,2
+cur002,adm,tur009,2° ano - a,dis026,geografia ii,pro004,hippler,2
+cur002,adm,tur009,2° ano - a,dis050,gestao do agronegocio,pro034,deise palaver,3
+cur002,adm,tur009,2° ano - a,dis019,fisica ii,pro011,tiago,2
+cur002,adm,tur009,2° ano - a,dis022,quimica ii,pro035,rans,2
+cur002,adm,tur009,2° ano - a,dis051,gestao da producao e qualidade,pro034,deise palaver,3
+cur002,adm,tur009,2° ano - a,dis052,tecnicas de negociacao,pro032,elizeu,3
+cur002,adm,tur009,2° ano - a,dis016,lingua portuguesa e literatura ii,pro013,kelly,4
+cur002,adm,tur009,2° ano - a,dis014,biologia ii,pro007,tassiana,2
+cur002,adm,tur010,2° ano - b,dis024,matematica ii,pro033,jairo,4
+cur002,adm,tur010,2° ano - b,dis053,banco de dados,pro018,jacinto,2
+cur002,adm,tur010,2° ano - b,dis022,quimica ii,pro035,rans,2
+cur002,adm,tur010,2° ano - b,dis054,engenharia de software,pro036,antonio,2
+cur002,adm,tur010,2° ano - b,dis049,historia ii,pro006,keila,2
+cur002,adm,tur010,2° ano - b,dis055,sociologia ii,pro037,lirian,2
+cur002,adm,tur011,3° ano - a,dis056,geografia iii,pro021,angelo,2
+cur002,adm,tur011,3° ano - a,dis033,historia iii,pro006,keila,2
+cur002,adm,tur011,3° ano - a,dis057,filosofia iii,pro020,joao victor,2
+cur002,adm,tur011,3° ano - a,dis041,matematica iii,pro033,jairo,4
+cur002,adm,tur011,3° ano - a,dis058,estatistica aplicada,pro038,rildo,3
+cur002,adm,tur011,3° ano - a,dis059,comercio exterior e logistica internacional,pro032,elizeu,3
+cur002,adm,tur011,3° ano - a,dis060,direito empresarial trabalhista e tributario,pro039,geferson,3
+cur002,adm,tur011,3° ano - a,dis042,biologia iii,pro007,tassiana,2
+cur002,adm,tur011,3° ano - a,dis061,gestao financeira,pro040,felipe,3
+cur002,adm,tur011,3° ano - a,dis062,marketing e empreendedorismo,pro027,patricia dias,3
+cur002,adm,tur012,3° ano - b,dis063,gestao da producao,pro028,jose ivo,3
+cur002,adm,tur012,3° ano - b,dis064,planejamento empresarial,pro028,jose ivo,3
+cur002,adm,tur012,3° ano - b,dis065,marketing ii,pro034,deise palaver,3
+cur002,adm,tur012,3° ano - b,dis066,direito empresarial e tributario,pro039,geferson,3
+cur002,adm,tur012,3° ano - b,dis067,comunicacao organizacional,pro027,patricia dias,3
+cur003,info,tur013,1° ano - a,dis006,geografia,pro004,hippler,2
+cur003,info,tur013,1° ano - a,dis011,lingua portuguesa e literatura,pro009,juliano,4
+cur003,info,tur013,1° ano - a,dis008,historia,pro041,emi info 1a,2
+cur003,info,tur013,1° ano - a,dis068,introducao a programacao,pro042,gleiner,4
+cur003,info,tur013,1° ano - a,dis012,arte,pro010,sebastiao,1
+cur003,info,tur013,1° ano - a,dis007,matematica i,pro030,lucimar,4
+cur003,info,tur013,1° ano - a,dis010,educacao fisica,pro008,nairana,2
+cur003,info,tur013,1° ano - a,dis009,biologia,pro029,thiago miguel,2
+cur003,info,tur013,1° ano - a,dis069,arquitetura e sistemas operacionais,pro018,jacinto,3
+cur003,info,tur013,1° ano - a,dis013,fisica,pro011,tiago,2
+cur003,info,tur014,1° ano - b,dis068,introducao a programacao,pro042,gleiner,4
+cur003,info,tur014,1° ano - b,dis007,matematica i,pro030,lucimar,4
+cur003,info,tur014,1° ano - b,dis013,fisica,pro011,tiago,2
+cur003,info,tur014,1° ano - b,dis054,engenharia de software,pro036,antonio,2
+cur003,info,tur014,1° ano - b,dis011,lingua portuguesa e literatura,pro009,juliano,4
+cur003,info,tur014,1° ano - b,dis010,educacao fisica,pro043,guilherme,2
+cur003,info,tur015,2° ano - a,dis014,biologia ii,pro029,thiago miguel,2
+cur003,info,tur015,2° ano - a,dis070,linguagens e tecnicas de programacao,pro044,andre lobo,4
+cur003,info,tur015,2° ano - a,dis025,filosofia ii,pro020,joao victor,2
+cur003,info,tur015,2° ano - a,dis016,lingua portuguesa e literatura ii,pro013,kelly,4
+cur003,info,tur015,2° ano - a,dis071,projeto integrador i,pro045,abade,4
+cur003,info,tur015,2° ano - a,dis026,geografia ii,pro004,hippler,2
+cur003,info,tur015,2° ano - a,dis055,sociologia ii,pro037,lirian,2
+cur003,info,tur015,2° ano - a,dis024,matematica ii,pro005,eliete,4
+cur003,info,tur015,2° ano - a,dis019,fisica ii,pro011,tiago,2
+cur003,info,tur015,2° ano - a,dis022,quimica ii,pro035,rans,2
+cur003,info,tur015,2° ano - a,dis054,engenharia de software,pro036,antonio,2
+cur003,info,tur015,2° ano - a,dis053,banco de dados,pro018,jacinto,2
+cur003,info,tur016,2° ano - b,dis024,matematica ii,pro033,jairo,4
+cur003,info,tur016,2° ano - b,dis018,educacao fisica ii,pro043,guilherme,2
+cur003,info,tur016,2° ano - b,dis025,filosofia ii,pro020,joao victor,2
+cur003,info,tur016,2° ano - b,dis017,lingua estrangeira ingles ii,pro013,kelly,2
+cur003,info,tur016,2° ano - b,dis071,projeto integrador i,pro045,abade,4
+cur003,info,tur016,2° ano - b,dis026,geografia ii,pro004,hippler,2
+cur003,info,tur016,2° ano - b,dis014,biologia ii,pro029,thiago miguel,2
+cur003,info,tur016,2° ano - b,dis047,libras,pro031,michelle,2
+cur003,info,tur016,2° ano - b,dis053,banco de dados,pro018,jacinto,2
+cur003,info,tur017,3° ano - a,dis056,geografia iii,pro021,angelo,2
+cur003,info,tur017,3° ano - a,dis072,desenvolvimento para web,pro042,gleiner,4
+cur003,info,tur017,3° ano - a,dis073,redes de computadores,pro045,abade,4
+cur003,info,tur017,3° ano - a,dis031,fisica iii,pro014,fernando,2
+cur003,info,tur017,3° ano - a,dis033,historia iii,pro006,keila,2
+cur003,info,tur017,3° ano - a,dis074,projeto e desenvolvimento de sistemas,pro036,antonio,4
+cur003,info,tur017,3° ano - a,dis034,sociologia iii,pro037,lirian,2
+cur003,info,tur017,3° ano - a,dis057,filosofia iii,pro020,joao victor,2
+cur003,info,tur017,3° ano - a,dis041,matematica iii,pro025,manoel,4
+cur003,info,tur017,3° ano - a,dis042,biologia iii,pro029,thiago miguel,2
+cur003,info,tur017,3° ano - a,dis075,lingua estrangeira ingles iii,pro013,kelly,2
+cur003,info,tur018,3° ano - b,dis031,fisica iii,pro014,fernando,2
+cur003,info,tur018,3° ano - b,dis072,desenvolvimento para web,pro042,gleiner,4
+cur003,info,tur018,3° ano - b,dis074,projeto e desenvolvimento de sistemas,pro036,antonio,4
+cur003,info,tur018,3° ano - b,dis073,redes de computadores,pro045,abade,4
+cur003,info,tur018,3° ano - b,dis036,lingua portuguesa e literatura iii,pro024,edson,4
+cur003,info,tur018,3° ano - b,dis076,descricao projeto integrador ii,pro042,gleiner,4
