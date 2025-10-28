@@ -1,23 +1,11 @@
 import pandas as pd
 
-horarioINFO = pd.read_csv('horarioINFO.csv', sep=',', encoding='utf-8-sig',
-                          names=["Código do Curso", "Curso", "Código da Série", "Série",
-                             "Código da Turma", "Turma", "Código da Disciplina",
-                             "Disciplina", "Professor", "Código do Professor", "Total de Aulas Semanais"],
-                          header=0)
+horariosTURMAS = pd.read_csv('horariosTURMAS.csv', sep=',', encoding='utf-8-sig')
 
-horarioAGRO = pd.read_csv('horarioAGRO.csv', sep=',', encoding='utf-8-sig',
-                          names=["Código do Curso", "Curso", "Código da Série", "Série",
-                                 "Código da Turma", "Turma", "Código da Disciplina",
-                                 "Disciplina", "Professor", "Código do Professor", "Total de Aulas Semanais"],
-                          header=0)
+horariosTURMAS.columns = [
+    "Código do Curso", "Curso", "Código de Turma", "Turma",
+    "Código da Disciplina", "Disciplina", "Código do Professor", "Professor", "Total de Aulas Semanais"
+]
 
-horarioADM = pd.read_csv('horarioADM.csv', sep=',', encoding='utf-8-sig',
-                         names=["Código do Curso", "Curso", "Código da Série", "Série",
-                             "Código da Turma", "Turma", "Código da Disciplina",
-                             "Disciplina", "Professor", "Código do Professor", "Total de Aulas Semanais"],
-                         header=0)
-
-print(horarioINFO.head())
-print(horarioAGRO.head())
-print(horarioADM.head())
+horariosTURMAS["Série"] = horariosTURMAS["Turma"].str.extract(r'(\d+° ano)')
+horariosTURMAS["Turma_Letra"] = horariosTURMAS["Turma"].str.extract(r'- ([a-zA-Z])$')
