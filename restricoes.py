@@ -252,3 +252,5 @@ def inicializar_validador(todas_matrizes):
 
 def validar_restricoes_globais():
     return validador.validar_carga_horaria_professores()
+
+

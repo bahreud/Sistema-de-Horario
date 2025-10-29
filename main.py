@@ -144,6 +144,7 @@ def main():
     print(f"   • Turmas com matrizes perfeitas: {turmas_perfeitas}")
     print(f"   • Turmas exportadas: {turmas_exportadas}")
     print(f"   • Taxa de sucesso perfeito: {(turmas_perfeitas / total_turmas) * 100:.1f}%")
+    print(f"   • Media de pontos: {(pontuacao_final / total_turmas)}")
     print(f"   • Taxa de exportação: {(turmas_exportadas / total_turmas) * 100:.1f}%")
 
     if matrizes_com_violacoes and matrizes_para_exportar == matrizes_perfeitas:
