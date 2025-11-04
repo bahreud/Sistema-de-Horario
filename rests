@@ -1,0 +1,21 @@
+⇒ RESTRIÇÕES ESSENCIAIS:
+ - A alocação de aulas deve ser feita primeiro na parte manhã, quando esta estiver completa passe aulas "sobrando" ou dando conflito para tarde.
+→ Restrições de Professores:
+ - Um professor não pode estar em dois lugares (turmas) ao mesmo tempo;
+ - Dois professores não podem estar na mesma turma ao mesmo tempo;
+
+→ Restrições do Curso:
+ - Respeitar o horário de funcionamento dos cursos;
+ - Informática, Agropecuária e Administração não tem aula no período da noite;
+ - Os cursos podem ter dois dias com aulas no período da tarde.
+
+
+
+→ Restrições de eficiência:
+ - Horários vagos só são permitidos nos dois últimos horários do turno;
+ - Blocos de aula contínuos, agrupar aulas da mesma disciplina (ex: 2 aulas seguidas ao invés de separadas). Cursos técnicos: até 4 aulas seguidas; matérias gerais: até 2 seguidas.
+ - Professores do curso podem dar até 4 aulas por dia, no mínimo 2; professores comuns podem dar no máximo 2 no dia;
+ - Evitar horários vagos no turno matutino.
+ - Respeitar as preferências dos professores quando possível, mas pode ser flexibilizado se necessário.
+ - Balanceamento de carga horária entre docentes do mesmo núcleo.
+ - Evitar sobrecarga em um único professor.
