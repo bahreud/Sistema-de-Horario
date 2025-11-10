@@ -12,7 +12,7 @@ class ValidadorHorarios:  # Cria uma classe para verificar se os horários estã
         self.todas_matrizes_globais = todas_matrizes  # Guarda os horários para poder verificar depois
 
     def validar_carga_horaria_disciplinas(self, matriz, df):  # Verifica se todas as matérias têm o número certo de aulas
-        """Verificação MUITO IMPORTANTE - tem que estar perfeita"""  # Explicação
+        """Verificação MUITO IMPORTANTE - tem que estar perfeita"""
         erros = []  # Lista vazia para guardar erros encontrados
         total_aulas_necessarias = 0  # Contador para o total de aulas que são necessárias
 
@@ -38,7 +38,7 @@ class ValidadorHorarios:  # Cria uma classe para verificar se os horários estã
         return erros  # Retorna a lista de erros
 
     def validar_professor_duas_turmas_mesmo_horario(self, matriz_atual, professores_atual, curso_atual, serie_atual, turma_atual):  # Verifica se um professor está em duas turmas ao mesmo tempo
-        """Verificação MUITO IMPORTANTE - não pode acontecer"""  # Explicação
+        """Verificação MUITO IMPORTANTE - não pode acontecer"""
         erros = []  # Lista vazia para erros
 
         for dia_idx in range(len(dias)):  # Para cada dia da semana
@@ -64,7 +64,7 @@ class ValidadorHorarios:  # Cria uma classe para verificar se os horários estã
         return erros  # Retorna lista de erros
 
     def validar_eficiencia_manha(self, matriz, df):  # Verifica se a manhã está bem aproveitada
-        """Verificação de QUALIDADE: Manhã deve estar bem aproveitada"""  # Explicação
+        """Verificação de QUALIDADE: Manhã deve estar bem aproveitada"""
         erros = []  # Lista vazia
 
         # Conta aulas na manhã e tarde
@@ -118,7 +118,7 @@ def validar_restricoes(matriz, df, curso, serie, turma):  # Função para valida
     return erros  # Retorna só os erros
 
 def autoajustar_matriz_com_pontuacao(matriz, df, curso, serie, turma, max_tentativas=100):  # Tenta melhorar o horário
-    """Tenta ajustar automaticamente o horário para ficar melhor"""  # Explicação
+    """Tenta ajustar automaticamente o horário para ficar melhor"""
     print("🔄 Autoajuste priorizando carga horária...")  # Mensagem
 
     melhor_matriz = matriz.copy()  # Faz uma cópia do horário original
@@ -150,6 +150,3 @@ def autoajustar_matriz(matriz, df, curso, serie, turma, max_tentativas=20):  # V
 
 def inicializar_validador(todas_matrizes):  # Função para preparar o validador
     validador.inicializar_dados(todas_matrizes)  # Passa todos os horários para o validador
-
-def validar_restricoes_globais():  # Função para verificar problemas entre todas as turmas (ainda não faz nada)
-    return []  # Retorna lista vazia (não implementada ainda)

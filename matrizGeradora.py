@@ -1,9 +1,9 @@
 import numpy as np  # Importa biblioteca para trabalhar com matrizes (tabelas de números)
-import random  # Importa biblioteca para gerar números aleatórios (para tentar diferentes combinações)
+import random  # Importa biblioteca para gerar números aleatórios
 import pandas as pd  # Importa biblioteca para trabalhar com dados em formato de tabela
-from csvpandas import horariosTURMAS  # Pega os dados das turmas que já foram preparados no outro arquivo
+from csvpandas import horariosTURMAS  # Pega os dados das turmas que já foram preparados
 
-dias = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"]  # Lista com os dias da semana que terão aula
+dias = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"]  # Lista dos dias da semana que terão aula
 horarios = [  # Lista com todos os horários de aula disponíveis
     "07:10-08:00", "08:00-08:50", "09:00-09:50",  # Três primeiros horários da manhã
     "09:50-10:40", "10:50-11:40", "11:40-12:30",  # Três últimos horários da manhã
@@ -20,23 +20,23 @@ class GeradorTardeOpcional:  # Cria uma classe (um molde) para gerar horários d
         self.professor_horarios = {}  # Esvazia o dicionário que guarda os professores
 
     def distribuir_tarde_opcional(self, df, curso, serie, turma, max_tentativas=500):  # Método principal que tenta criar os horários
-        """Tenta colocar o máximo de aulas na manhã, só usando a tarde se for realmente necessário"""  # Explicação do que faz
+        """Foca em colocar o máximo de aulas na manhã, só usando a tarde se for realmente necessário"""
 
         for tentativa in range(max_tentativas):  # Tenta várias vezes (até 500 vezes) criar um horário bom
             matriz = np.zeros((len(dias), len(horarios)), dtype=object)  # Cria uma tabela vazia com 5 linhas (dias) e 10 colunas (horários)
             professores_dict = dict(zip(df["Código da Disciplina"], df["Professor"]))  # Cria uma lista que liga cada matéria ao seu professor
 
-            # Primeiro tenta colocar TODAS as aulas só na manhã
+            # PRIMEIRA TENTATIVA: Tentar colocar TODAS as aulas só na MANHÃ
             sucesso_manha_completa = self._tentar_manha_completa(matriz, df, professores_dict, curso, serie, turma)
 
             if sucesso_manha_completa:  # Se conseguiu colocar tudo na manhã
                 print(f"   ✅ CONSEGUIU: Todas as aulas na manhã!")  # Mostra mensagem de sucesso
                 return matriz, professores_dict  # Retorna a tabela de horários e a lista de professores
 
-            # Se não conseguiu tudo na manhã, tenta usar a tarde para completar
+            # SEGUNDA TENTATIVA: Se não conseguiu tudo na manhã, usar a tarde para completar
             sucesso_com_tarde = self._usar_tarde_complemento(matriz, df, professores_dict, curso, serie, turma)
 
-            if sucesso_com_tarde:  # Se conseguiu com a tarde
+            if sucesso_com_tarde:  # Se conseguiu com complemento da tarde
                 aulas_manha = self._contar_aulas_manha(matriz)  # Conta quantas aulas ficaram na manhã
                 aulas_tarde = self._contar_aulas_tarde(matriz)  # Conta quantas aulas ficaram na tarde
                 total_necessario = df["Total de Aulas Semanais"].sum()  # Soma total de aulas que eram necessárias
@@ -48,7 +48,7 @@ class GeradorTardeOpcional:  # Cria uma classe (um molde) para gerar horários d
         return self._abordagem_garantida(df, curso, serie, turma)  # Usa um método mais simples que sempre funciona
 
     def _tentar_manha_completa(self, matriz, df, professores_dict, curso, serie, turma):  # Tenta colocar tudo só na manhã
-        """Tenta colocar TODAS as aulas apenas na MANHÃ"""  # Explicação do que faz
+        """Tenta colocar TODAS as aulas apenas na MANHÃ"""
         total_necessario = df["Total de Aulas Semanais"].sum()  # Soma quantas aulas são necessárias no total
         capacidade_manha = len(dias) * len(self.horarios_manha)  # Calcula quantas aulas cabem na manhã (5 dias × 6 horários = 30)
 
@@ -72,7 +72,7 @@ class GeradorTardeOpcional:  # Cria uma classe (um molde) para gerar horários d
         for codigo, professor in todas_aulas:  # Para cada aula que precisa ser colocada
             alocado = False  # Ainda não colocou esta aula
 
-            # Ordena os dias começando pelos que têm menos aulas (para distribuir melhor)
+            # Tentar de forma inteligente: dias com menos aulas primeiro
             dias_ordenados = sorted(range(len(dias)),
                                     key=lambda d: sum(1 for h in self.horarios_manha if matriz[d, h] != 0))
 
@@ -83,10 +83,10 @@ class GeradorTardeOpcional:  # Cria uma classe (um molde) para gerar horários d
                 # Mistura a ordem dos horários para tentar combinações diferentes
                 horarios_tentativa = random.sample(self.horarios_manha, len(self.horarios_manha))
                 for horario_idx in horarios_tentativa:  # Para cada horário da manhã
-                    # Verifica três coisas: se o horário está livre, se o professor está disponível, e se não tem conflito
+                    # Verifica duas coisas: se o horário está livre e se o professor está disponível
                     if (matriz[dia_idx, horario_idx] == 0 and  # O horário está vazio?
-                            self._professor_disponivel(professor, dia_idx, horario_idx) and  # O professor está livre neste horário?
-                            not self._professor_tem_conflito(matriz, professores_dict, professor, dia_idx, horario_idx)):  # O professor não tem outra aula no mesmo dia?
+                            self._professor_disponivel(professor, dia_idx, horario_idx)):  # O professor está livre neste horário?
+                        # NOTA: A verificação de conflito no mesmo dia foi removida
 
                         matriz[dia_idx, horario_idx] = codigo  # Coloca a matéria neste horário
                         self._registrar_alocacao(professor, dia_idx, horario_idx, curso, serie, turma)  # Marca que o professor está ocupado
@@ -99,14 +99,14 @@ class GeradorTardeOpcional:  # Cria uma classe (um molde) para gerar horários d
         return True  # Conseguiu colocar todas as aulas na manhã!
 
     def _usar_tarde_complemento(self, matriz, df, professores_dict, curso, serie, turma):  # Usa a tarde para completar
-        """Usa a tarde apenas para completar aulas que não couberam na manhã"""  # Explicação do que faz
-        # Primeiro tenta colocar o máximo possível na manhã
+        """Usa a tarde apenas para completar aulas que não couberam na manhã"""
+        # Primeiro: Tenta colocar o máximo possível na manhã
         self._maximizar_manha(matriz, df, professores_dict, curso, serie, turma)
-        # Depois completa o que faltou na tarde
+        # Depois: Completa o restante na tarde
         return self._completar_na_tarde(matriz, df, professores_dict, curso, serie, turma)
 
     def _maximizar_manha(self, matriz, df, professores_dict, curso, serie, turma):  # Coloca o máximo na manhã
-        """Preenche a manhã o máximo possível antes de usar a tarde"""  # Explicação do que faz
+        """Preenche a manhã o máximo possível antes de usar a tarde"""
         # Cria lista com todas as aulas
         todas_aulas = []  # Lista vazia
         for _, row in df.iterrows():  # Para cada matéria no arquivo CSV
@@ -127,8 +127,8 @@ class GeradorTardeOpcional:  # Cria uma classe (um molde) para gerar horários d
                 for horario_idx in self.horarios_manha:  # Para cada horário da manhã
                     # Verifica se pode colocar a aula aqui
                     if (matriz[dia_idx, horario_idx] == 0 and  # Horário vazio?
-                            self._professor_disponivel(professor, dia_idx, horario_idx) and  # Professor livre?
-                            not self._professor_tem_conflito(matriz, professores_dict, professor, dia_idx, horario_idx)):  # Sem conflitos?
+                            self._professor_disponivel(professor, dia_idx, horario_idx)):  # Professor livre?
+                        # NOTA: A verificação de conflito no mesmo dia foi removida
 
                         matriz[dia_idx, horario_idx] = codigo  # Coloca a matéria
                         self._registrar_alocacao(professor, dia_idx, horario_idx, curso, serie, turma)  # Marca professor ocupado
@@ -136,7 +136,7 @@ class GeradorTardeOpcional:  # Cria uma classe (um molde) para gerar horários d
                         break  # Para de tentar horários
 
     def _completar_na_tarde(self, matriz, df, professores_dict, curso, serie, turma):  # Completa na tarde o que faltou
-        """Completa na tarde apenas o que faltou na manhã"""  # Explicação do que faz
+        """Completa na tarde apenas o que faltou na manhã"""
         # Verifica quais matérias ainda precisam de mais aulas
         disciplinas_faltantes = []  # Lista vazia para matérias que faltam aulas
         for _, row in df.iterrows():  # Para cada matéria no arquivo CSV
@@ -176,8 +176,8 @@ class GeradorTardeOpcional:  # Cria uma classe (um molde) para gerar horários d
         return True  # Conseguiu colocar todas as aulas faltantes!
 
     def _abordagem_garantida(self, df, curso, serie, turma):  # Método simples que sempre funciona
-        """Método de última opção que SEMPRE consegue colocar todas as aulas"""  # Explicação do que faz
-        print(f"🔧 Uso abordagem GARANTIDA para {curso} {serie} {turma}")  # Avisa que está usando este método
+        """Método de última opção que SEMPRE consegue colocar todas as aulas"""
+        print(f"🔧 Usando abordagem GARANTIDA para {curso} {serie} {turma}")  # Avisa que está usando este método
 
         matriz = np.zeros((len(dias), len(horarios)), dtype=object)  # Cria tabela vazia
         professores_dict = dict(zip(df["Código da Disciplina"], df["Professor"]))  # Cria lista de professores
@@ -227,18 +227,12 @@ class GeradorTardeOpcional:  # Cria uma classe (um molde) para gerar horários d
         return sum(1 for dia in range(len(dias)) for hora in self.horarios_tarde if matriz[dia, hora] != 0)  # Soma todas as células não vazias da tarde
 
     def _professor_disponivel(self, professor, dia_idx, horario_idx):  # Verifica se o professor está livre
+        """Verifica se o professor está disponível (não está em outra turma no mesmo horário)"""
         chave = (professor, dia_idx, horario_idx)  # Cria uma chave única com professor, dia e horário
         return chave not in self.professor_horarios  # Retorna True se o professor não está ocupado neste horário
 
-    def _professor_tem_conflito(self, matriz, professores_dict, professor, dia_idx, horario_idx):  # Verifica se o professor já tem aula no mesmo dia
-        for h in range(len(horarios)):  # Para cada horário do dia
-            if matriz[dia_idx, h] != 0:  # Se tem alguma aula neste horário
-                prof_existente = professores_dict.get(matriz[dia_idx, h])  # Pega o professor desta aula
-                if prof_existente == professor:  # Se é o mesmo professor que queremos colocar
-                    return True  # Retorna que tem conflito (não pode ter duas aulas no mesmo dia)
-        return False  # Retorna que não tem conflito
-
     def _registrar_alocacao(self, professor, dia_idx, horario_idx, curso, serie, turma):  # Marca que o professor está ocupado
+        """Registra onde o professor foi colocado para evitar que ele fique em duas turmas ao mesmo tempo"""
         chave = (professor, dia_idx, horario_idx)  # Cria uma chave única
         self.professor_horarios[chave] = (curso, serie, turma)  # Guarda onde o professor foi colocado
 
@@ -261,7 +255,7 @@ def gerar_matrizes_por_turma(df):  # Gera horários para todas as turmas do arqu
     grupos = df.groupby(["Curso", "Série", "Turma_Letra"])
 
     for (curso, serie, turma), grupo in grupos:  # Para cada turma
-        print(f"\n🎯 GERANDO: {curso} - {serie} - Turma {turma}")  # Mostra qual turma está processando
+        print(f"\n🎯 GERANDO: {curso} - {serie} - Turma {turma}")  # Mostra qual turma está sendo processada
         total_aulas = grupo["Total de Aulas Semanais"].sum()  # Soma quantas aulas esta turma precisa
         capacidade_manha = len(dias) * len(gerador_tarde_opcional.horarios_manha)  # Calcula quantas aulas cabem na manhã
 
